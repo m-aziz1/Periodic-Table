@@ -1,0 +1,34 @@
+* {
+  font-family: "Roboto", "Arial";
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 10px;
+  text-align: center;
+  color: green;
+}
+
+.periodic-table {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 2px;
+}
+
+/* Block styling */
+.grid-item {
+  position: relative;
+  width: 5vw;
+  height: 5vw;
+  background-color: lightblue;
+  border: 1px solid white;
+  cursor: pointer;
+}
+
+.el-name {
+text-align: center;
+margin-top: 5px;
+font-size: 3vw;
+}
