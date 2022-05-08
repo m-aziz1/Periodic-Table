@@ -9,7 +9,7 @@ h1 {
   color: midnightblue;
 }
 
-.periodic-table {
+#periodic-table {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(10, 1fr);
@@ -18,7 +18,7 @@ h1 {
 }
 
 /* Block styling */
-.periodic-table div {
+.grid-item {
   position: relative;
   width: 5vw;
   height: 5vw;
@@ -27,9 +27,9 @@ h1 {
 }
 
 /* Enlarge on Hover */
-.periodic-table div:hover {
+.grid-item:hover {
   transform: scale(2);
-  transform-origin: top left;
+  /* transform-origin: top right; */
   border: 1px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   background-color: rgba(173, 216, 230, 0.8);
@@ -37,7 +37,7 @@ h1 {
 }
 
 /* Hidden Blocks */
-.placeholder-block {
+.placeholder {
   visibility: hidden;
 }
 
@@ -47,7 +47,7 @@ h1 {
   top: 10%;
   left: 10%;
   right: auto;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   margin-top: 0.5vh;
   font-size: 1vw;
   line-height: 1;
@@ -60,7 +60,7 @@ h1 {
   top: 50%;
   left: 50%;
   right: auto;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   margin-top: -4px;
   font-size: 2vw;
   line-height: 1;
@@ -73,10 +73,12 @@ h1 {
   top: 90%;
   left: 50%;
   right: auto;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%, -50%);
   margin-top: -4px;
   font-size: 1vh;
   line-height: 1;
   height: 1vw;
   color: midnightblue;
 }
+
+/* Element Trait Styles */
