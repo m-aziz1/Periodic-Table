@@ -12,52 +12,46 @@ document.addEventListener("DOMContentLoaded", fillGrid);
 
 //GRID
 function fillGrid() {
-  //10 * 18 grid
-  let countLow = 0;
-  let rowLength = 18;
-  let countHigh = rowLength;
-
-  for (let i = countLow; i < countHigh; i++) {
-    const elementBlock = document.createElement("div");
-    elementBlock.classList.add("grid-item");
-    tableGrid.appendChild(elementBlock);
-    countLow++;
-  }
-  countHigh += rowLength;
-
-  for (let i = countLow; i < countHigh; i++) {
-    const elementBlock = document.createElement("div");
-    elementBlock.classList.add("grid-item");
-    tableGrid.appendChild(elementBlock);
-    countLow++;
-  }
-  countHigh += rowLength;
-
-  for (let i = countLow; i < countHigh; i++) {
-    const elementBlock = document.createElement("div");
-    elementBlock.classList.add("grid-item");
-    tableGrid.appendChild(elementBlock);
-    countLow++;
-  }
-  console.log(countLow, countHigh);
+  //Create Grid and Identities
+  createElements(18, 10);
 }
 
-function appendLoop() {
-  let countLow = 0;
-  let rowLength = 18;
-  let countHigh = rowLength;
+function createElements(rowLength, yRows, yInd = 1) {
+  for (let i = 1; i <= rowLength; i++) {
+    //Element Blocks
+    const elementBlock = Object.assign(document.createElement("div"), {
+      classList: "grid-item",
+      id: `xpos-${i}-ypos-${yInd}`,
+    });
 
-  for (let i = countLow; i < countHigh; i++) {
-    const elementBlock = document.createElement("div");
-    elementBlock.classList.add("grid-item");
-    tableGrid.appendChild(elementBlock);
-    countLow++;
+    //Atomic Numbers
+    const atomicNumber = Object.assign(document.createElement("p"), {
+      classList: "atomic-number",
+      innerHTML: `${i}`,
+    });
+
+    //Element Symbols
+    const elSymbol = Object.assign(document.createElement("p"), {
+      classList: "el-symbol",
+      innerHTML: "H",
+    });
+
+    //Element Names
+    const elName = Object.assign(document.createElement("p"), {
+      classList: "el-name",
+      innerHTML: "Hello",
+    });
+
+    tableGrid.append(elementBlock);
+    elementBlock.append(atomicNumber, elSymbol, elName);
   }
-  
-}
 
-// for (let i = 0; i < 180; i++) {
-//   const elementBlock = document.createElement("div");
-//   elementBlock.classList.add("grid-item");
-//   tableGrid.appendChild(elementBlock);
-// }
+  // Stop Recursion
+  if (yInd === yRows) {
+    return;
+  }
+
+  //Repeat for all Rows
+  yInd++;
+  createElements(rowLength, yRows, yInd);
+}
