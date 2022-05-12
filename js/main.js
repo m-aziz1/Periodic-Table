@@ -1,30 +1,15 @@
 //PERIODIC TABLE
 
 //Element Array
-let elements = [];
+let elements = new ElementsArray();
 
 //DOCUMENT ELEMENTS
 const tableGrid = document.getElementById("periodic-table");
-document.addEventListener("DOMContentLoaded", invokeOnload);
-
-function invokeOnload() {
-  createArray();
-  fillGrid();
-}
-
-//Create Array
-function createArray() {
-  fetch("../data/periodic-table-data.json")
-    .then((rawData) => rawData.json())
-    .then((data) => {
-      for (let i = 0; i < data.length; i++) {
-        elements.push(data[i]);
-      }
-    });
-}
+document.addEventListener("DOMContentLoaded", fillGrid);
 
 //GRID
 function fillGrid() {
+  elements.fromFile("../data.json");
   //Create Grid and Identities
   createElements(18, 10);
 }
@@ -61,7 +46,7 @@ function createElements(rowLength, columns, yInd = 1, elNum = 0) {
     elNum++;
   }
 
-  console.log(elNum, elements);
+  // console.log(elNum, elements);
   // Stop Recursion
   if (yInd === columns) {
     return;
@@ -72,9 +57,4 @@ function createElements(rowLength, columns, yInd = 1, elNum = 0) {
   createElements(rowLength, columns, yInd, elNum);
 }
 
-function searchArray(anArray, xInd, yInd) {
-  //-1 returned if value not found
-  return anArray.findIndex(
-    (array) => array.xpos === xInd && array.ypos === yInd
-  );
-}
+
