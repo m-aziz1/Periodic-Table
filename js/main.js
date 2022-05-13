@@ -5,16 +5,9 @@ let elements = new ElementsArray();
 
 //DOCUMENT ELEMENTS
 const tableGrid = document.getElementById("periodic-table");
-document.addEventListener("DOMContentLoaded", fillGrid);
 
 //GRID
-function fillGrid() {
-  elements.fromFile("../data.json");
-  //Create Grid and Identities
-  createElements(18, 10);
-}
-
-function createElements(rowLength, columns, yInd = 1, elNum = 0) {
+function createElements(anArray, rowLength, columns, yInd = 1, elNum = 0) {
   for (let i = 1; i <= rowLength; i++) {
     //Element Blocks
     const elementBlock = Object.assign(document.createElement("div"), {
@@ -46,7 +39,9 @@ function createElements(rowLength, columns, yInd = 1, elNum = 0) {
     elNum++;
   }
 
-  // console.log(elNum, elements);
+  let found = elements.find(2, 1);
+  
+  console.log(found);
   // Stop Recursion
   if (yInd === columns) {
     return;
@@ -54,7 +49,5 @@ function createElements(rowLength, columns, yInd = 1, elNum = 0) {
 
   //Repeat for all Rows
   yInd++;
-  createElements(rowLength, columns, yInd, elNum);
+  createElements(anArray, rowLength, columns, yInd, elNum);
 }
-
-

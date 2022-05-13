@@ -1,6 +1,7 @@
 class ElementsArray {
   constructor() {
     this.list = [];
+    this.fromFile("../data.json");
   }
 
   //Methods
@@ -11,18 +12,15 @@ class ElementsArray {
         for (let i = 0; i < data.length; i++) {
           this.list.push(data[i]);
         }
-        this.consoleText(1);
+        //Create Grid and Identities
+        createElements(this.list, 18, 10);
       });
   }
 
-  compare(xCoord, yCoord) {
+  find(xCoord, yCoord) {
     //returns -1 if value does not exist
     return this.list.findIndex(
-      (element) => element.xpos === xCoord && element.ypos === yCoord
+      (listEl) => listEl.xpos === xCoord && listEl.ypos === yCoord
     );
-  }
-
-  consoleText(n) {
-    console.log(this.list[n]);
   }
 }
