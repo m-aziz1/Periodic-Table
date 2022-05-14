@@ -34,12 +34,13 @@ h1 {
 }
 
 /* Enlarge on Hover */
-.grid-item:hover, .grid-item:active {
-  transform: scale(2);
+.grid-item:hover,
+.grid-item:active {
+  transform: scale(1.5);
   /* transform-origin: top right; */
   border: 1px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: rgba(173, 216, 230, 0.8);
+  background-color: rgba(47, 144, 255, 0.8);
   z-index: 1;
 }
 
@@ -51,11 +52,11 @@ h1 {
 /* Element Info */
 .atomic-number {
   position: absolute;
-  top: 0.6vw;
-  left: 0.6vw;
+  top: 0.8vw;
+  left: 0.8vw;
   right: auto;
   transform: translate(-50%, -50%);
-  margin-top: 0.3vw;
+  margin-top: 0.2vw;
   font-size: 1vw;
   line-height: 1;
   height: 1vw;
@@ -88,4 +89,12 @@ h1 {
   color: midnightblue;
 }
 
-/* Element Trait Styles */
+/* Media Queries */
+@media only screen and (max-width: 750px) {
+  .atomic-number {
+    top: 0.8vw;
+    left: 0.8vw;
+    margin-top: 0px;
+    font-size: 0.8vw;
+  }
+}

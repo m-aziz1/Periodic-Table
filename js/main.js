@@ -13,7 +13,7 @@ function createElements(anArray, rowLength, columns, yInd = 1) {
 
     if (found > -1) {
       //Element Blocks
-      blockInfo(i, yInd, null, anArray[found].symbol, anArray[found].name);
+      blockInfo(i, yInd, null, anArray[found].number, anArray[found].symbol, anArray[found].name);
     } else {
       blockInfo(i, yInd, "placeholder", null, null);
     }
@@ -29,7 +29,7 @@ function createElements(anArray, rowLength, columns, yInd = 1) {
   createElements(anArray, rowLength, columns, yInd);
 }
 
-function blockInfo(xInd, yInd, descriptor, symbol, name) {
+function blockInfo(xInd, yInd, descriptor, number, symbol, name) {
   const elementBlock = Object.assign(document.createElement("div"), {
     classList: `grid-item ${descriptor}`,
     id: `xpos-${xInd}-ypos-${yInd}`,
@@ -38,7 +38,7 @@ function blockInfo(xInd, yInd, descriptor, symbol, name) {
   //Atomic Numbers
   const atomicNumber = Object.assign(document.createElement("p"), {
     classList: "atomic-number",
-    innerHTML: `${yInd}`,
+    innerHTML: `${number}`,
   });
 
   //Element Symbols
