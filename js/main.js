@@ -19,8 +19,6 @@ function createElements(anArray, rowLength, columns, yInd = 1) {
     }
   }
 
-  let found = elements.find(2, 1);
-
   // Stop Recursion
   if (yInd === columns) {
     return;
