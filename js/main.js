@@ -14,7 +14,14 @@ function createElements(anArray, rowLength, columns, yInd = 1) {
     if (found > -1) {
       //Element Blocks
       console.log(anArray[found].category);
-      blockInfo(i, yInd, anArray[found].category, anArray[found].number, anArray[found].symbol, anArray[found].name);
+      blockInfo(
+        i,
+        yInd,
+        anArray[found].category,
+        anArray[found].number,
+        anArray[found].symbol,
+        anArray[found].name
+      );
     } else {
       blockInfo(i, yInd, "placeholder", null, null);
     }
