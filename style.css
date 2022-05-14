@@ -34,8 +34,7 @@ h1 {
 }
 
 /* Enlarge on Hover */
-.grid-item:hover,
-.grid-item:active {
+.grid-item:hover {
   transform: scale(1.5);
   /* transform-origin: top right; */
   border: 1px solid white;
