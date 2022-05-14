@@ -19,7 +19,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 2px;
+  grid-column-gap: 0px;
   grid-row-gap: 4px;
 }
 
@@ -46,50 +46,43 @@ h1 {
 }
 
 /* Element Info */
-.atomic-number {
+.atomic-number,
+.el-symbol,
+.el-name {
   position: absolute;
-  top: 0.9vw;
-  left: 1vw;
   right: auto;
   transform: translate(-50%, -50%);
-  margin-top: 0.2vw;
-  font-size: 0.8vw;
   line-height: 1;
   height: 1vw;
   color: midnightblue;
+}
+
+.atomic-number {
+  top: 15%;
+  left: 15%;
+  margin-top: 0px;
+  font-size: 0.8vw;
 }
 
 .el-symbol {
-  position: absolute;
   top: 50%;
   left: 50%;
-  right: auto;
-  transform: translate(-50%, -50%);
-  margin-top: -4px;
+  margin-top: -10%;
   font-size: 2vw;
-  line-height: 1;
-  height: 1vw;
-  color: midnightblue;
 }
 
 .el-name {
-  position: absolute;
   top: 90%;
   left: 50%;
-  right: auto;
-  transform: translate(-50%, -50%);
-  margin-top: -1.5px;
+  margin-top: 0px;
   font-size: 0.6vw;
-  line-height: 1;
-  height: 1vw;
-  color: midnightblue;
 }
 
 /* Media Queries */
 @media only screen and (max-width: 750px) {
   .atomic-number {
-    top: 0.9vw;
-    left: 0.9vw;
+    top: 20%;
+    left: 20%;
     margin-top: 0px;
     font-size: 0.7vw;
   }

@@ -12,55 +12,60 @@ function createElements(anArray, rowLength, columns, yInd = 1) {
     let found = elements.find(i, yInd);
 
     if (found > -1) {
-      //Element Blocks
-      console.log(anArray[found].category);
       blockInfo(
-        i,
-        yInd,
         anArray[found].category,
         anArray[found].number,
         anArray[found].symbol,
         anArray[found].name
       );
     } else {
-      blockInfo(i, yInd, "placeholder", null, null);
+      blockInfo("placeholder");
     }
   }
 
-  // Stop Recursion
+  // stop recursion
   if (yInd === columns) {
     return;
   }
 
-  //Repeat for all Rows
+  //repeat for all rows
   yInd++;
   createElements(anArray, rowLength, columns, yInd);
 }
 
-function blockInfo(xInd, yInd, descriptor, number, symbol, name) {
+//CREATE AND APPEND INFO BLOCK
+function blockInfo(descriptor, number, symbol, name) {
   const elementBlock = Object.assign(document.createElement("div"), {
     classList: `grid-item ${descriptor}`,
-    id: `xpos-${xInd}-ypos-${yInd}`,
-  });
-
-  //Atomic Numbers
-  const atomicNumber = Object.assign(document.createElement("p"), {
-    classList: "atomic-number",
-    innerHTML: `${number}`,
-  });
-
-  //Element Symbols
-  const elSymbol = Object.assign(document.createElement("p"), {
-    classList: "el-symbol",
-    innerHTML: `${symbol}`,
-  });
-
-  //Element Names
-  const elName = Object.assign(document.createElement("p"), {
-    classList: "el-name",
-    innerHTML: `${name}`,
   });
 
   tableGrid.append(elementBlock);
-  elementBlock.append(atomicNumber, elSymbol, elName);
+
+  if (descriptor != "placeholder") {
+    //atomic numbers
+    const atomicNumber = Object.assign(document.createElement("p"), {
+      classList: "atomic-number",
+      innerHTML: `${number}`,
+    });
+
+    //element eymbols
+    const elSymbol = Object.assign(document.createElement("p"), {
+      classList: "el-symbol",
+      innerHTML: `${symbol}`,
+    });
+
+    //element names
+    const elName = Object.assign(document.createElement("p"), {
+      classList: "el-name",
+      innerHTML: `${name}`,
+    });
+
+    elementBlock.append(atomicNumber, elSymbol, elName);
+
+    elementBlock.addEventListener("click", () => textBox(name));
+  }
+}
+
+function textBox(text) {
+  alert(text);
 }
