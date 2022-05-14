@@ -1,0 +1,44 @@
+/* Element Categorization */
+.other-nonmetal {
+    background-color: yellow;
+}
+
+.halogen {
+    background-color: aquamarine;
+}
+
+.noble-gas {
+    background-color:  pink;
+}
+
+.alkali-metal {
+    background-color: burlywood;
+}
+
+.alkaline-earth-metal {
+    background-color: orange;
+}
+
+.metalloid {
+    background-color: lightgreen;
+}
+
+.post-transition-metal {
+    background-color: plum;
+}
+
+.transition-metal {
+    background-color: lightblue;
+}
+
+.lanthanide {
+    background-color: blue;
+}
+
+.actinide {
+    background-color: lightseagreen;
+}
+
+.unknown {
+    background-color: lightgray;
+}
