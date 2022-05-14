@@ -1,12 +1,12 @@
 class ElementsArray {
   constructor() {
     this.list = [];
-    this.fromFile("https://m-aziz1.github.io/Periodic-Table/data.json");
+    this.fromUrl("https://m-aziz1.github.io/Periodic-Table/data.json");
   }
 
   //Methods
-  fromFile(pathway) {
-    fetch(pathway)
+  fromUrl(address) {
+    fetch(address)
       .then((rawData) => rawData.json())
       .then((data) => {
         for (let i = 0; i < data.length; i++) {

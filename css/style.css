@@ -32,7 +32,7 @@ h1 {
 
 /* Enlarge on Hover */
 .grid-item:hover {
-  transform: scale(1.5);
+  transform: scale(2);
   /* transform-origin: top right; */
   border: 1px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -48,12 +48,12 @@ h1 {
 /* Element Info */
 .atomic-number {
   position: absolute;
-  top: 0.8vw;
-  left: 0.8vw;
+  top: 0.9vw;
+  left: 1vw;
   right: auto;
   transform: translate(-50%, -50%);
   margin-top: 0.2vw;
-  font-size: 1vw;
+  font-size: 0.8vw;
   line-height: 1;
   height: 1vw;
   color: midnightblue;
@@ -88,9 +88,9 @@ h1 {
 /* Media Queries */
 @media only screen and (max-width: 750px) {
   .atomic-number {
-    top: 0.8vw;
-    left: 0.8vw;
+    top: 0.9vw;
+    left: 0.9vw;
     margin-top: 0px;
-    font-size: 0.8vw;
+    font-size: 0.7vw;
   }
 }
