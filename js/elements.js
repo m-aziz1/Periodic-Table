@@ -1,7 +1,7 @@
 class ElementsArray {
   constructor() {
     this.list = [];
-    this.fromFile("../data.json");
+    this.fromFile("https://m-aziz1.github.io/Periodic-Table/data.json");
   }
 
   //Methods
