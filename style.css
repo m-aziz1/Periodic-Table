@@ -3,16 +3,20 @@
   box-sizing: border-box;
 }
 
+/* Header */
+body {
+  background-color: white;
+}
+
 h1 {
   margin: 15px;
   text-align: center;
   color: midnightblue;
 }
 
+/* Grid */
 #periodic-table {
   display: grid;
-  margin-left: auto;
-  margin-right: auto;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(10, 1fr);
   grid-column-gap: 2px;
@@ -26,10 +30,11 @@ h1 {
   height: 5vw;
   background-color: rgb(173, 216, 230);
   cursor: pointer;
+  overflow: hidden;
 }
 
 /* Enlarge on Hover */
-.grid-item:hover {
+.grid-item:hover, .grid-item:active {
   transform: scale(2);
   /* transform-origin: top right; */
   border: 1px solid white;
@@ -76,8 +81,8 @@ h1 {
   left: 50%;
   right: auto;
   transform: translate(-50%, -50%);
-  margin-top: -4px;
-  font-size: 1vw;
+  margin-top: -1.5px;
+  font-size: 0.6vw;
   line-height: 1;
   height: 1vw;
   color: midnightblue;
