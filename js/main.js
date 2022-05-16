@@ -5,6 +5,7 @@ let elements = new ElementsArray();
 
 //DOCUMENT ELEMENTS
 const tableGrid = document.getElementById("periodic-table");
+const extraInfoDiv = document.getElementById("extra-info-container");
 
 //GRID
 function createElements(anArray, rowLength, columns, yInd = 1) {

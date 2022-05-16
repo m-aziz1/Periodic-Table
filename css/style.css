@@ -19,8 +19,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(18, 1fr);
   grid-template-rows: repeat(10, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 4px;
+  grid-row-gap: 0.4vw;
 }
 
 /* Block styling */
@@ -36,8 +35,9 @@ h1 {
   /* transform-origin: top right; */
   border: 1px solid white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-  background-color: rgba(47, 144, 255, 0.8);
+  opacity: 0.8;
   z-index: 1;
+  cursor: pointer;
 }
 
 /* Hidden Blocks */
