@@ -13,7 +13,7 @@ class ElementsArray {
           this.list.push(data[i]);
         }
         //Create Grid and Identities
-        createElements(this.list, 18, 10);
+        generateElementsTable(this.list, 18, 10);
       });
   }
 

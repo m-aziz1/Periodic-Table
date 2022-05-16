@@ -1,14 +1,30 @@
 //PERIODIC TABLE
 
-//Element Array
+//ARRAYS
 let elements = new ElementsArray();
 
 //DOCUMENT ELEMENTS
 const tableGrid = document.getElementById("periodic-table");
 const extraInfoDiv = document.getElementById("extra-info-container");
 
+function buildTable() {
+  //create HTML elements
+  const table = htmlElement("table");
+  const tHead = htmlElementt("thead");
+  const tr = htmlElement("tr");
+  const th = htmlElement("th");
+  const tBody = htmlElement("tbody");
+  const td = htmlElement("td");
+
+  tHead.innerHTML = "<tr><th colspan='2'>Name</th></tr>";
+}
+
+function htmlElement(type) {
+  return document.createElement(type);
+}
+
 //GRID
-function createElements(anArray, rowLength, columns, yInd = 1) {
+function generateElementsTable(anArray, rowLength, columns, yInd = 1) {
   for (let i = 1; i <= rowLength; i++) {
     let found = elements.find(i, yInd);
 
@@ -31,7 +47,7 @@ function createElements(anArray, rowLength, columns, yInd = 1) {
 
   //repeat for all rows
   yInd++;
-  createElements(anArray, rowLength, columns, yInd);
+  generateElementsTable(anArray, rowLength, columns, yInd);
 }
 
 //CREATE AND APPEND INFO BLOCK

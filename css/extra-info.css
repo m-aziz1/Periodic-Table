@@ -1,7 +1,7 @@
 /* Extra Info */
 #extra-info-container {
   background-color: lightgray;
-  width: 80vw;
+  width: 75%;
   height: fit-content;
   padding: 10px;
   margin-left: auto;
@@ -34,24 +34,23 @@
   width: 80%;
 }
 .info-table td {
-  border-color: gray;
+  border-color: black;
   border-style: solid;
   border-width: 1px;
   font-family: Arial, sans-serif;
-  font-size: 14px;
+  font-size: 1.2vw;
   overflow: hidden;
-  padding: 10px 5px;
+  padding: 0.5vw;
   word-break: normal;
 }
 .info-table th {
-  border-color: gray;
+  border-color: black;
   border-style: solid;
   border-width: 1px;
   font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 1.5vw;
+  font-weight: bold;
   overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
 }
-
