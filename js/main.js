@@ -1,32 +1,75 @@
 //PERIODIC TABLE
 
-//ARRAYS
-let elements = new ElementsArray();
+datafromURL("https://m-aziz1.github.io/Periodic-Table/data.json");
+
+function datafromURL(address) {
+  fetch(address)
+    .then((rawData) => rawData.json())
+    .then((data) => {
+      let tableElements = [];
+      for (let i = 0; i < data.length; i++) {
+        tableElements.push(data[i]);
+      }
+
+      //Create Grid and Identities
+      let keyNames = Object.getOwnPropertyNames(data[0]);
+      let exclude = ["spectral_img", "xpos", "ypos", "cpk-hex"];
+      removeValues(keyNames, exclude);
+
+      generateElementsTable(keyNames, tableElements, 18, 10);
+    });
+}
+
+function findPos(anArray, xCoord, yCoord) {
+  //returns -1 if value does not exist
+  return anArray.findIndex(
+    (listEl) => listEl.xpos === xCoord && listEl.ypos === yCoord
+  );
+}
+
+function removeValues(modify, remove) {
+  for (let i = 0; i < remove.length; i++) {
+    let ind = modify.findIndex((property) => property === remove[i]);
+    modify.splice(ind, 1);
+  }
+}
 
 //DOCUMENT ELEMENTS
 const tableGrid = document.getElementById("periodic-table");
 const extraInfoDiv = document.getElementById("extra-info-container");
 
-function buildTable() {
+
+function buildTable(dataArray) {
   //create HTML elements
-  const table = htmlElement("table");
-  const tHead = htmlElementt("thead");
-  const tr = htmlElement("tr");
-  const th = htmlElement("th");
-  const tBody = htmlElement("tbody");
-  const td = htmlElement("td");
+  const table = document.createElement("table");
+  const tBody = document.createElement("tbody");
+  const tHead = document.createElement("thead");
 
-  tHead.innerHTML = "<tr><th colspan='2'>Name</th></tr>";
-}
+  tHead.innerHTML = "<tr><th colspan='2'>ElName</th></tr>";
 
-function htmlElement(type) {
-  return document.createElement(type);
+  table.classList.add("info-table");
+  table.appendChild(tHead);
+// //////////////
+  for (let i = 0; i < dataArray.length; i++) {
+    const tr = document.createElement("tr");
+    tr.append(
+      Object.assign(document.createElement("td"), {
+        innerHTML: `<em>${dataArray[i]}</em>`,
+      }),
+      Object.assign(document.createElement("td"), { innerHTML: `${i}` })
+    );
+
+    tBody.appendChild(tr);
+    table.appendChild(tBody);
+  }
+
+  extraInfoDiv.appendChild(table);
 }
 
 //GRID
-function generateElementsTable(anArray, rowLength, columns, yInd = 1) {
+function generateElementsTable(keys, anArray, rowLength, columns, yInd = 1) {
   for (let i = 1; i <= rowLength; i++) {
-    let found = elements.find(i, yInd);
+    let found = findPos(anArray, i, yInd);
 
     if (found > -1) {
       blockInfo(
@@ -47,7 +90,7 @@ function generateElementsTable(anArray, rowLength, columns, yInd = 1) {
 
   //repeat for all rows
   yInd++;
-  generateElementsTable(anArray, rowLength, columns, yInd);
+  generateElementsTable(keys, anArray, rowLength, columns, yInd);
 }
 
 //CREATE AND APPEND INFO BLOCK
@@ -86,3 +129,5 @@ function blockInfo(descriptor, number, symbol, name) {
 function textBox(text) {
   alert(text);
 }
+
+function deleteNodes() {}
