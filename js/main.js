@@ -13,7 +13,13 @@ function datafromURL(address) {
 
       //Create Grid and Identities
       let keyNames = Object.getOwnPropertyNames(data[0]);
-      let exclude = ["spectral_img", "xpos", "ypos", "cpk-hex"];
+      let exclude = [
+        "spectral_img",
+        "xpos",
+        "ypos",
+        "cpk-hex",
+        "ionization_energies",
+      ];
       removeValues(keyNames, exclude);
 
       generateElementsTable(keyNames, tableElements, 18, 10);
@@ -38,25 +44,27 @@ function removeValues(modify, remove) {
 const tableGrid = document.getElementById("periodic-table");
 const extraInfoDiv = document.getElementById("extra-info-container");
 
-
-function buildTable(dataArray) {
+function buildTable(element, keys) {
+  deleteNodes(extraInfoDiv);
   //create HTML elements
   const table = document.createElement("table");
   const tBody = document.createElement("tbody");
   const tHead = document.createElement("thead");
 
-  tHead.innerHTML = "<tr><th colspan='2'>ElName</th></tr>";
+  tHead.innerHTML = `<tr><th colspan='2'>${element.name}</th></tr>`;
 
   table.classList.add("info-table");
   table.appendChild(tHead);
-// //////////////
-  for (let i = 0; i < dataArray.length; i++) {
+
+  for (let i = 0; i < keys.length; i++) {
     const tr = document.createElement("tr");
     tr.append(
       Object.assign(document.createElement("td"), {
-        innerHTML: `<em>${dataArray[i]}</em>`,
+        innerHTML: `<strong>${keys[i].replaceAll("_", " ")}</strong>`,
       }),
-      Object.assign(document.createElement("td"), { innerHTML: `${i}` })
+      Object.assign(document.createElement("td"), {
+        innerHTML: `${element[keys[i]]}`,
+      })
     );
 
     tBody.appendChild(tr);
@@ -72,12 +80,7 @@ function generateElementsTable(keys, anArray, rowLength, columns, yInd = 1) {
     let found = findPos(anArray, i, yInd);
 
     if (found > -1) {
-      blockInfo(
-        anArray[found].category,
-        anArray[found].number,
-        anArray[found].symbol,
-        anArray[found].name
-      );
+      blockInfo(anArray[found].category, anArray[found], keys);
     } else {
       blockInfo("placeholder");
     }
@@ -94,7 +97,7 @@ function generateElementsTable(keys, anArray, rowLength, columns, yInd = 1) {
 }
 
 //CREATE AND APPEND INFO BLOCK
-function blockInfo(descriptor, number, symbol, name) {
+function blockInfo(descriptor, anArray, keys) {
   const elementBlock = Object.assign(document.createElement("div"), {
     classList: `grid-item ${descriptor}`,
   });
@@ -105,29 +108,29 @@ function blockInfo(descriptor, number, symbol, name) {
     //atomic numbers
     const atomicNumber = Object.assign(document.createElement("p"), {
       classList: "atomic-number",
-      innerHTML: `${number}`,
+      innerHTML: `${anArray.number}`,
     });
 
     //element eymbols
     const elSymbol = Object.assign(document.createElement("p"), {
       classList: "el-symbol",
-      innerHTML: `${symbol}`,
+      innerHTML: `${anArray.symbol}`,
     });
 
     //element names
     const elName = Object.assign(document.createElement("p"), {
       classList: "el-name",
-      innerHTML: `${name}`,
+      innerHTML: `${anArray.name}`,
     });
 
     elementBlock.append(atomicNumber, elSymbol, elName);
 
-    elementBlock.addEventListener("click", () => textBox(name));
+    elementBlock.addEventListener("click", () => buildTable(anArray, keys));
   }
 }
 
-function textBox(text) {
-  alert(text);
+function deleteNodes(container) {
+  while (container.childNodes.length > 0) {
+    container.removeChild(container.lastChild);
+  }
 }
-
-function deleteNodes() {}

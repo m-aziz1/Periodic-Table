@@ -3026,7 +3026,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d3 7s2",
     "electron_affinity": "undetermined",
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "d1004f"
   },
   {
@@ -3054,7 +3054,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d4 7s2",
     "electron_affinity": "undetermined",
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "d90045"
   },
   {
@@ -3082,7 +3082,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d5 7s2",
     "electron_affinity": "undetermined",
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "e00038"
   },
   {
@@ -3110,7 +3110,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d6 7s2",
     "electron_affinity": "undetermined",
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "e6002e"
   },
   {
@@ -3138,7 +3138,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d7 7s2",
     "electron_affinity": "undetermined",
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "eb0026"
   },
   {
@@ -3166,7 +3166,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d9 7s1",
     "electron_affinity": "undetermined",
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   },
   {
@@ -3194,7 +3194,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d10 7s1",
     "electron_affinity": 151,
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   },
   {
@@ -3222,7 +3222,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d10 7s2",
     "electron_affinity": "undetermined",
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   },
   {
@@ -3250,7 +3250,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d10 7s2 7p1",
     "electron_affinity": 66.6,
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   },
   {
@@ -3278,7 +3278,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d10 7s2 7p2",
     "electron_affinity": "undetermined",
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   },
   {
@@ -3306,7 +3306,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d10 7s2 7p3",
     "electron_affinity": 35.3,
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   },
   {
@@ -3334,7 +3334,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d10 7s2 7p4",
     "electron_affinity": 74.9,
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   },
   {
@@ -3362,7 +3362,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d10 7s2 7p5",
     "electron_affinity": 165.9,
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   },
   {
@@ -3390,7 +3390,7 @@
     "electron_configuration_semantic": "*[Rn] 5f14 6d10 7s2 7p6",
     "electron_affinity": 5.40318,
     "electronegativity_pauling": "undetermined",
-    "ionization_energies": [],
+    "ionization_energies": "undetermined",
     "cpk-hex": "undetermined"
   }
 ]
