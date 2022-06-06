@@ -1,5 +1,10 @@
 //PERIODIC TABLE
 
+//DOCUMENT ELEMENTS
+const tableGrid = document.getElementById("periodic-table");
+const extraInfoDiv = document.getElementById("extra-info-container");
+
+//GET JSON DATA
 datafromURL("https://m-aziz1.github.io/Periodic-Table/data.json");
 
 function datafromURL(address) {
@@ -24,54 +29,6 @@ function datafromURL(address) {
 
       generateElementsTable(keyNames, tableElements, 18, 10);
     });
-}
-
-function findPos(anArray, xCoord, yCoord) {
-  //returns -1 if value does not exist
-  return anArray.findIndex(
-    (listEl) => listEl.xpos === xCoord && listEl.ypos === yCoord
-  );
-}
-
-function removeValues(modify, remove) {
-  for (let i = 0; i < remove.length; i++) {
-    let ind = modify.findIndex((property) => property === remove[i]);
-    modify.splice(ind, 1);
-  }
-}
-
-//DOCUMENT ELEMENTS
-const tableGrid = document.getElementById("periodic-table");
-const extraInfoDiv = document.getElementById("extra-info-container");
-
-function buildTable(element, keys) {
-  deleteNodes(extraInfoDiv);
-  //create HTML elements
-  const table = document.createElement("table");
-  const tBody = document.createElement("tbody");
-  const tHead = document.createElement("thead");
-
-  tHead.innerHTML = `<tr><th colspan='2'>${element.name}</th></tr>`;
-
-  table.classList.add("info-table");
-  table.appendChild(tHead);
-
-  for (let i = 0; i < keys.length; i++) {
-    const tr = document.createElement("tr");
-    tr.append(
-      Object.assign(document.createElement("td"), {
-        innerHTML: `<strong>${keys[i].replaceAll("_", " ")}</strong>`,
-      }),
-      Object.assign(document.createElement("td"), {
-        innerHTML: `${element[keys[i]]}`,
-      })
-    );
-
-    tBody.appendChild(tr);
-    table.appendChild(tBody);
-  }
-
-  extraInfoDiv.appendChild(table);
 }
 
 //GRID
@@ -125,12 +82,78 @@ function blockInfo(descriptor, anArray, keys) {
 
     elementBlock.append(atomicNumber, elSymbol, elName);
 
+    //add table generator event
     elementBlock.addEventListener("click", () => buildTable(anArray, keys));
   }
 }
 
+//CREATE TABLE WITH INFO
+function buildTable(element, keys) {
+  deleteNodes(extraInfoDiv);
+  //create HTML elements
+  const table = document.createElement("table");
+  const tBody = document.createElement("tbody");
+  const tHead = document.createElement("thead");
+
+  tHead.innerHTML = `<tr><th colspan='2'>${element.name}</th></tr>`;
+
+  table.classList.add("info-table");
+  table.appendChild(tHead);
+
+  for (let i = 0; i < keys.length; i++) {
+    let value = element[keys[i]];
+    let units = "";
+    //define units
+    switch (keys[i]) {
+      case "atomic_mass":
+        units = "g";
+        value = value.toFixed(2);
+        break;
+      case "boil":
+      case "melt":
+        units = "K";
+        break;
+      case "density":
+        units = "g/cm<sup>3</sup>";
+        break;
+      case "molar_heat":
+        units = "J/mol * °C";
+    }
+
+    const tr = document.createElement("tr");
+    tr.append(
+      Object.assign(document.createElement("td"), {
+        innerHTML: `<strong>${keys[i].replaceAll("_", " ")}</strong>`,
+      }),
+      Object.assign(document.createElement("td"), {
+        innerHTML: `${value} ${units}`,
+      })
+    );
+
+    tBody.appendChild(tr);
+    table.appendChild(tBody);
+  }
+
+  extraInfoDiv.appendChild(table);
+}
+
+//OTHER FUNCTIONS
 function deleteNodes(container) {
   while (container.childNodes.length > 0) {
     container.removeChild(container.lastChild);
+  }
+}
+
+function findPos(anArray, xCoord, yCoord) {
+  //returns -1 if value does not exist
+  return anArray.findIndex(
+    (listEl) => listEl.xpos === xCoord && listEl.ypos === yCoord
+  );
+}
+
+function removeValues(modify, remove) {
+  for (let i = 0; i < remove.length; i++) {
+    let ind = modify.findIndex((property) => property === remove[i]);
+    modify.splice(ind, 1);
   }
 }
