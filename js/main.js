@@ -5,7 +5,19 @@ const tableGrid = document.getElementById("periodic-table");
 const extraInfoDiv = document.getElementById("extra-info-container");
 
 //GET JSON DATA
-datafromURL("https://m-aziz1.github.io/Periodic-Table/data.json");
+datafromURL("../data.json");
+//"https://m-aziz1.github.io/Periodic-Table/data.json"
+
+//CREATE GROUP HEADERS
+const groups = document.getElementById("groups");
+for (let i = 1; i <= 18; i++) {
+  const numBlock = Object.assign(document.createElement("div"), {
+    classList: "group-number",
+    innerHTML: `${i}`,
+  });
+
+  groups.appendChild(numBlock);
+}
 
 function datafromURL(address) {
   fetch(address)
@@ -13,12 +25,15 @@ function datafromURL(address) {
     .then((data) => {
       let tableElements = [];
       for (let i = 0; i < data.length; i++) {
+        data[i]["name"] = data[i]["name"].toLowerCase();
         tableElements.push(data[i]);
       }
 
       //Create Grid and Identities
+      //Data to exclude from table
       let keyNames = Object.getOwnPropertyNames(data[0]);
       let exclude = [
+        "name",
         "spectral_img",
         "xpos",
         "ypos",
@@ -106,7 +121,7 @@ function buildTable(element, keys) {
     //define units
     switch (keys[i]) {
       case "atomic_mass":
-        units = "g";
+        units = "g/mol";
         value = value.toFixed(2);
         break;
       case "boil":

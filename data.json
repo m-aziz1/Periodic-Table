@@ -1,5 +1,6 @@
 [
   {
+    "common_charges": ["1+", "1-"],
     "name": "Hydrogen",
     "appearance": "colorless gas",
     "atomic_mass": 1.008,
@@ -28,6 +29,7 @@
     "cpk-hex": "ffffff"
   },
   {
+    "common_charges": ["-"],
     "name": "Helium",
     "appearance": "colorless gas, exhibiting a red-orange glow when placed in a high-voltage electric field",
     "atomic_mass": 4.0026022,
@@ -56,6 +58,7 @@
     "cpk-hex": "d9ffff"
   },
   {
+    "common_charges": ["1+"],
     "name": "Lithium",
     "appearance": "silvery-white",
     "atomic_mass": 6.94,
@@ -84,6 +87,7 @@
     "cpk-hex": "cc80ff"
   },
   {
+    "common_charges": ["2+"],
     "name": "Beryllium",
     "appearance": "white-gray metallic",
     "atomic_mass": 9.01218315,
@@ -112,6 +116,7 @@
     "cpk-hex": "c2ff00"
   },
   {
+    "common_charges": ["-"],
     "name": "Boron",
     "appearance": "black-brown",
     "atomic_mass": 10.81,
@@ -140,6 +145,7 @@
     "cpk-hex": "ffb5b5"
   },
   {
+    "common_charges": ["-"],
     "name": "Carbon",
     "appearance": "undetermined",
     "atomic_mass": 12.011,
@@ -168,6 +174,7 @@
     "cpk-hex": "909090"
   },
   {
+    "common_charges": ["-"],
     "name": "Nitrogen",
     "appearance": "colorless gas, liquid or solid",
     "atomic_mass": 14.007,
@@ -196,6 +203,7 @@
     "cpk-hex": "3050f8"
   },
   {
+    "common_charges": ["-"],
     "name": "Oxygen",
     "appearance": "undetermined",
     "atomic_mass": 15.999,
@@ -226,6 +234,7 @@
     "cpk-hex": "ff0d0d"
   },
   {
+    "common_charges": ["-"],
     "name": "Fluorine",
     "appearance": "undetermined",
     "atomic_mass": 18.9984031636,
@@ -256,6 +265,7 @@
     "cpk-hex": "90e050"
   },
   {
+    "common_charges": ["-"],
     "name": "Neon",
     "appearance": "colorless gas exhibiting an orange-red glow when placed in a high voltage electric field",
     "atomic_mass": 20.17976,
@@ -286,6 +296,7 @@
     "cpk-hex": "b3e3f5"
   },
   {
+    "common_charges": ["1+"],
     "name": "Sodium",
     "appearance": "silvery white metallic",
     "atomic_mass": 22.989769282,
@@ -317,6 +328,7 @@
     "cpk-hex": "ab5cf2"
   },
   {
+    "common_charges": ["2+"],
     "name": "Magnesium",
     "appearance": "shiny grey solid",
     "atomic_mass": 24.305,
@@ -348,6 +360,7 @@
     "cpk-hex": "8aff00"
   },
   {
+    "common_charges": ["3+"],
     "name": "Aluminium",
     "appearance": "silvery gray metallic",
     "atomic_mass": 26.98153857,
@@ -379,6 +392,7 @@
     "cpk-hex": "bfa6a6"
   },
   {
+    "common_charges": ["-"],
     "name": "Silicon",
     "appearance": "crystalline, reflective with bluish-tinged faces",
     "atomic_mass": 28.085,
@@ -410,6 +424,7 @@
     "cpk-hex": "f0c8a0"
   },
   {
+    "common_charges": ["-"],
     "name": "Phosphorus",
     "appearance": "colourless, waxy white, yellow, scarlet, red, violet, black",
     "atomic_mass": 30.9737619985,
@@ -441,6 +456,7 @@
     "cpk-hex": "ff8000"
   },
   {
+    "common_charges": ["-"],
     "name": "Sulfur",
     "appearance": "lemon yellow sintered microcrystals",
     "atomic_mass": 32.06,
@@ -472,6 +488,7 @@
     "cpk-hex": "ffff30"
   },
   {
+    "common_charges": ["-"],
     "name": "Chlorine",
     "appearance": "pale yellow-green gas",
     "atomic_mass": 35.45,
@@ -503,6 +520,7 @@
     "cpk-hex": "1ff01f"
   },
   {
+    "common_charges": ["-"],
     "name": "Argon",
     "appearance": "colorless gas exhibiting a lilac/violet glow when placed in a high voltage electric field",
     "atomic_mass": 39.9481,
@@ -534,6 +552,7 @@
     "cpk-hex": "80d1e3"
   },
   {
+    "common_charges": ["1+"],
     "name": "Potassium",
     "appearance": "silvery gray",
     "atomic_mass": 39.09831,
@@ -565,6 +584,7 @@
     "cpk-hex": "8f40d4"
   },
   {
+    "common_charges": ["2+"],
     "name": "Calcium",
     "appearance": "undetermined",
     "atomic_mass": 40.0784,
@@ -596,6 +616,7 @@
     "cpk-hex": "3dff00"
   },
   {
+    "common_charges": ["3+"],
     "name": "Scandium",
     "appearance": "silvery white",
     "atomic_mass": 44.9559085,
@@ -628,6 +649,7 @@
     "cpk-hex": "e6e6e6"
   },
   {
+    "common_charges": ["4+", "3+"],
     "name": "Titanium",
     "appearance": "silvery grey-white metallic",
     "atomic_mass": 47.8671,
@@ -660,6 +682,7 @@
     "cpk-hex": "bfc2c7"
   },
   {
+    "common_charges": ["5+", "4+"],
     "name": "Vanadium",
     "appearance": "blue-silver-grey metal",
     "atomic_mass": 50.94151,
@@ -692,6 +715,7 @@
     "cpk-hex": "a6a6ab"
   },
   {
+    "common_charges": ["3+", "2+"],
     "name": "Chromium",
     "appearance": "silvery metallic",
     "atomic_mass": 51.99616,
@@ -724,6 +748,7 @@
     "cpk-hex": "8a99c7"
   },
   {
+    "common_charges": ["2+", "4+"],
     "name": "Manganese",
     "appearance": "silvery metallic",
     "atomic_mass": 54.9380443,
@@ -756,6 +781,7 @@
     "cpk-hex": "9c7ac7"
   },
   {
+    "common_charges": ["3+", "2+"],
     "name": "Iron",
     "appearance": "lustrous metallic with a grayish tinge",
     "atomic_mass": 55.8452,
@@ -788,6 +814,7 @@
     "cpk-hex": "e06633"
   },
   {
+    "common_charges": ["2+", "3+"],
     "name": "Cobalt",
     "appearance": "hard lustrous gray metal",
     "atomic_mass": 58.9331944,
@@ -820,6 +847,7 @@
     "cpk-hex": "f090a0"
   },
   {
+    "common_charges": ["2+", "3+"],
     "name": "Nickel",
     "appearance": "lustrous, metallic, and silver with a gold tinge",
     "atomic_mass": 58.69344,
@@ -852,6 +880,7 @@
     "cpk-hex": "50d050"
   },
   {
+    "common_charges": ["2+", "1+"],
     "name": "Copper",
     "appearance": "red-orange metallic luster",
     "atomic_mass": 63.5463,
@@ -884,6 +913,7 @@
     "cpk-hex": "c88033"
   },
   {
+    "common_charges": ["2+"],
     "name": "Zinc",
     "appearance": "silver-gray",
     "atomic_mass": 65.382,
@@ -915,6 +945,7 @@
     "cpk-hex": "7d80b0"
   },
   {
+    "common_charges": ["3+"],
     "name": "Gallium",
     "appearance": "silver-white",
     "atomic_mass": 69.7231,
@@ -943,6 +974,7 @@
     "cpk-hex": "c28f8f"
   },
   {
+    "common_charges": ["4+"],
     "name": "Germanium",
     "appearance": "grayish-white",
     "atomic_mass": 72.6308,
@@ -971,6 +1003,7 @@
     "cpk-hex": "668f8f"
   },
   {
+    "common_charges": ["-"],
     "name": "Arsenic",
     "appearance": "metallic grey",
     "atomic_mass": 74.9215956,
@@ -999,6 +1032,7 @@
     "cpk-hex": "bd80e3"
   },
   {
+    "common_charges": ["-"],
     "name": "Selenium",
     "appearance": "black, red, and gray (not pictured) allotropes",
     "atomic_mass": 78.9718,
@@ -1027,6 +1061,7 @@
     "cpk-hex": "ffa100"
   },
   {
+    "common_charges": ["-"],
     "name": "Bromine",
     "appearance": "undetermined",
     "atomic_mass": 79.904,
@@ -1055,6 +1090,7 @@
     "cpk-hex": "a62929"
   },
   {
+    "common_charges": ["-"],
     "name": "Krypton",
     "appearance": "colorless gas, exhibiting a whitish glow in a high electric field",
     "atomic_mass": 83.7982,
@@ -1087,6 +1123,7 @@
     "cpk-hex": "5cb8d1"
   },
   {
+    "common_charges": ["1+"],
     "name": "Rubidium",
     "appearance": "grey white",
     "atomic_mass": 85.46783,
@@ -1117,6 +1154,7 @@
     "cpk-hex": "702eb0"
   },
   {
+    "common_charges": ["2+"],
     "name": "Strontium",
     "appearance": "undetermined",
     "atomic_mass": 87.621,
@@ -1147,6 +1185,7 @@
     "cpk-hex": "00ff00"
   },
   {
+    "common_charges": ["3+"],
     "name": "Yttrium",
     "appearance": "silvery white",
     "atomic_mass": 88.905842,
@@ -1178,6 +1217,7 @@
     "cpk-hex": "94ffff"
   },
   {
+    "common_charges": ["4+"],
     "name": "Zirconium",
     "appearance": "silvery white",
     "atomic_mass": 91.2242,
@@ -1206,6 +1246,7 @@
     "cpk-hex": "94e0e0"
   },
   {
+    "common_charges": ["5+", "3+"],
     "name": "Niobium",
     "appearance": "gray metallic, bluish when oxidized",
     "atomic_mass": 92.906372,
@@ -1234,6 +1275,7 @@
     "cpk-hex": "73c2c9"
   },
   {
+    "common_charges": ["6+"],
     "name": "Molybdenum",
     "appearance": "gray metallic",
     "atomic_mass": 95.951,
@@ -1266,6 +1308,7 @@
     "cpk-hex": "54b5b5"
   },
   {
+    "common_charges": ["7+"],
     "name": "Technetium",
     "appearance": "shiny gray metal",
     "atomic_mass": 98,
@@ -1294,6 +1337,7 @@
     "cpk-hex": "3b9e9e"
   },
   {
+    "common_charges": ["3+"],
     "name": "Ruthenium",
     "appearance": "silvery white metallic",
     "atomic_mass": 101.072,
@@ -1322,6 +1366,7 @@
     "cpk-hex": "248f8f"
   },
   {
+    "common_charges": ["3+"],
     "name": "Rhodium",
     "appearance": "silvery white metallic",
     "atomic_mass": 102.905502,
@@ -1350,6 +1395,7 @@
     "cpk-hex": "0a7d8c"
   },
   {
+    "common_charges": ["2+", "3+"],
     "name": "Palladium",
     "appearance": "silvery white",
     "atomic_mass": 106.421,
@@ -1378,6 +1424,7 @@
     "cpk-hex": "006985"
   },
   {
+    "common_charges": ["1+"],
     "name": "Silver",
     "appearance": "lustrous white metal",
     "atomic_mass": 107.86822,
@@ -1406,6 +1453,7 @@
     "cpk-hex": "c0c0c0"
   },
   {
+    "common_charges": ["2+"],
     "name": "Cadmium",
     "appearance": "silvery bluish-gray metallic",
     "atomic_mass": 112.4144,
@@ -1434,6 +1482,7 @@
     "cpk-hex": "ffd98f"
   },
   {
+    "common_charges": ["3+"],
     "name": "Indium",
     "appearance": "silvery lustrous gray",
     "atomic_mass": 114.8181,
@@ -1462,6 +1511,7 @@
     "cpk-hex": "a67573"
   },
   {
+    "common_charges": ["4+","2+"],
     "name": "Tin",
     "appearance": "silvery-white (beta, β) or gray (alpha, α)",
     "atomic_mass": 118.7107,
@@ -1490,6 +1540,7 @@
     "cpk-hex": "668080"
   },
   {
+    "common_charges": ["3+", "5+"],
     "name": "Antimony",
     "appearance": "silvery lustrous gray",
     "atomic_mass": 121.7601,
@@ -1518,6 +1569,7 @@
     "cpk-hex": "9e63b5"
   },
   {
+    "common_charges": ["-"],
     "name": "Tellurium",
     "appearance": "undetermined",
     "atomic_mass": 127.603,
@@ -1546,6 +1598,7 @@
     "cpk-hex": "d47a00"
   },
   {
+    "common_charges": ["-"],
     "name": "Iodine",
     "appearance": "lustrous metallic gray, violet as a gas",
     "atomic_mass": 126.904473,
@@ -1574,6 +1627,7 @@
     "cpk-hex": "940094"
   },
   {
+    "common_charges": ["-"],
     "name": "Xenon",
     "appearance": "colorless gas, exhibiting a blue glow when placed in a high voltage electric field",
     "atomic_mass": 131.2936,
@@ -1602,6 +1656,7 @@
     "cpk-hex": "429eb0"
   },
   {
+    "common_charges": ["1+"],
     "name": "Cesium",
     "appearance": "silvery gold",
     "atomic_mass": 132.905451966,
@@ -1630,6 +1685,7 @@
     "cpk-hex": "57178f"
   },
   {
+    "common_charges": ["2+"],
     "name": "Barium",
     "appearance": "undetermined",
     "atomic_mass": 137.3277,
@@ -1658,6 +1714,7 @@
     "cpk-hex": "00c900"
   },
   {
+    "common_charges": ["3+"],
     "name": "Lanthanum",
     "appearance": "silvery white",
     "atomic_mass": 138.905477,
@@ -1686,6 +1743,7 @@
     "cpk-hex": "70d4ff"
   },
   {
+    "common_charges": ["3+"],
     "name": "Cerium",
     "appearance": "silvery white",
     "atomic_mass": 140.1161,
@@ -1714,6 +1772,7 @@
     "cpk-hex": "ffffc7"
   },
   {
+    "common_charges": ["3+"],
     "name": "Praseodymium",
     "appearance": "grayish white",
     "atomic_mass": 140.907662,
@@ -1742,6 +1801,7 @@
     "cpk-hex": "d9ffc7"
   },
   {
+    "common_charges": ["3+"],
     "name": "Neodymium",
     "appearance": "silvery white",
     "atomic_mass": 144.2423,
@@ -1770,6 +1830,7 @@
     "cpk-hex": "c7ffc7"
   },
   {
+    "common_charges": ["3+"],
     "name": "Promethium",
     "appearance": "metallic",
     "atomic_mass": 145,
@@ -1798,6 +1859,7 @@
     "cpk-hex": "a3ffc7"
   },
   {
+    "common_charges": ["3+","2+"],
     "name": "Samarium",
     "appearance": "silvery white",
     "atomic_mass": 150.362,
@@ -1826,6 +1888,7 @@
     "cpk-hex": "8fffc7"
   },
   {
+    "common_charges": ["3+","2+"],
     "name": "Europium",
     "appearance": "undetermined",
     "atomic_mass": 151.9641,
@@ -1854,6 +1917,7 @@
     "cpk-hex": "61ffc7"
   },
   {
+    "common_charges": ["3+"],
     "name": "Gadolinium",
     "appearance": "silvery white",
     "atomic_mass": 157.253,
@@ -1882,6 +1946,7 @@
     "cpk-hex": "45ffc7"
   },
   {
+    "common_charges": ["3+"],
     "name": "Terbium",
     "appearance": "silvery white",
     "atomic_mass": 158.925352,
@@ -1910,6 +1975,7 @@
     "cpk-hex": "30ffc7"
   },
   {
+    "common_charges": ["3+"],
     "name": "Dysprosium",
     "appearance": "silvery white",
     "atomic_mass": 162.5001,
@@ -1938,6 +2004,7 @@
     "cpk-hex": "1fffc7"
   },
   {
+    "common_charges": ["3+"],
     "name": "Holmium",
     "appearance": "silvery white",
     "atomic_mass": 164.930332,
@@ -1966,6 +2033,7 @@
     "cpk-hex": "00ff9c"
   },
   {
+    "common_charges": ["3+"],
     "name": "Erbium",
     "appearance": "silvery white",
     "atomic_mass": 167.2593,
@@ -1994,6 +2062,7 @@
     "cpk-hex": "00e675"
   },
   {
+    "common_charges": ["3+"],
     "name": "Thulium",
     "appearance": "silvery gray",
     "atomic_mass": 168.934222,
@@ -2022,6 +2091,7 @@
     "cpk-hex": "00d452"
   },
   {
+    "common_charges": ["3+","2+"],
     "name": "Ytterbium",
     "appearance": "undetermined",
     "atomic_mass": 173.0451,
@@ -2050,6 +2120,7 @@
     "cpk-hex": "00bf38"
   },
   {
+    "common_charges": ["3+"],
     "name": "Lutetium",
     "appearance": "silvery white",
     "atomic_mass": 174.96681,
@@ -2078,6 +2149,7 @@
     "cpk-hex": "00ab24"
   },
   {
+    "common_charges": ["4+"],
     "name": "Hafnium",
     "appearance": "steel gray",
     "atomic_mass": 178.492,
@@ -2106,6 +2178,7 @@
     "cpk-hex": "4dc2ff"
   },
   {
+    "common_charges": ["5+"],
     "name": "Tantalum",
     "appearance": "gray blue",
     "atomic_mass": 180.947882,
@@ -2134,6 +2207,7 @@
     "cpk-hex": "4da6ff"
   },
   {
+    "common_charges": ["6+"],
     "name": "Tungsten",
     "appearance": "grayish white, lustrous",
     "atomic_mass": 183.841,
@@ -2162,6 +2236,7 @@
     "cpk-hex": "2194d6"
   },
   {
+    "common_charges": ["7+"],
     "name": "Rhenium",
     "appearance": "silvery-grayish",
     "atomic_mass": 186.2071,
@@ -2190,6 +2265,7 @@
     "cpk-hex": "267dab"
   },
   {
+    "common_charges": ["4+"],
     "name": "Osmium",
     "appearance": "silvery, blue cast",
     "atomic_mass": 190.233,
@@ -2218,6 +2294,7 @@
     "cpk-hex": "266696"
   },
   {
+    "common_charges": ["4+"],
     "name": "Iridium",
     "appearance": "silvery white",
     "atomic_mass": 192.2173,
@@ -2246,6 +2323,7 @@
     "cpk-hex": "175487"
   },
   {
+    "common_charges": ["4+","2+"],
     "name": "Platinum",
     "appearance": "silvery white",
     "atomic_mass": 195.0849,
@@ -2274,6 +2352,7 @@
     "cpk-hex": "d0d0e0"
   },
   {
+    "common_charges": ["3+","1+"],
     "name": "Gold",
     "appearance": "metallic yellow",
     "atomic_mass": 196.9665695,
@@ -2302,6 +2381,7 @@
     "cpk-hex": "ffd123"
   },
   {
+    "common_charges": ["2+","1+"],
     "name": "Mercury",
     "appearance": "silvery",
     "atomic_mass": 200.5923,
@@ -2330,6 +2410,7 @@
     "cpk-hex": "b8b8d0"
   },
   {
+    "common_charges": ["1","3+"],
     "name": "Thallium",
     "appearance": "silvery white",
     "atomic_mass": 204.38,
@@ -2358,6 +2439,7 @@
     "cpk-hex": "a6544d"
   },
   {
+    "common_charges": ["2+","4+"],
     "name": "Lead",
     "appearance": "metallic gray",
     "atomic_mass": 207.21,
@@ -2386,6 +2468,7 @@
     "cpk-hex": "575961"
   },
   {
+    "common_charges": ["3+","5+"],
     "name": "Bismuth",
     "appearance": "lustrous silver",
     "atomic_mass": 208.980401,
@@ -2414,6 +2497,7 @@
     "cpk-hex": "9e4fb5"
   },
   {
+    "common_charges": ["2+","4+"],
     "name": "Polonium",
     "appearance": "silvery",
     "atomic_mass": 209,
@@ -2442,6 +2526,7 @@
     "cpk-hex": "ab5c00"
   },
   {
+    "common_charges": ["-"],
     "name": "Astatine",
     "appearance": "unknown, probably metallic",
     "atomic_mass": 210,
@@ -2470,6 +2555,7 @@
     "cpk-hex": "754f45"
   },
   {
+    "common_charges": ["-"],
     "name": "Radon",
     "appearance": "colorless gas, occasionally glows green or red in discharge tubes",
     "atomic_mass": 222,
@@ -2498,6 +2584,7 @@
     "cpk-hex": "428296"
   },
   {
+    "common_charges": ["1+"],
     "name": "Francium",
     "appearance": "undetermined",
     "atomic_mass": 223,
@@ -2526,6 +2613,7 @@
     "cpk-hex": "420066"
   },
   {
+    "common_charges": ["2+"],
     "name": "Radium",
     "appearance": "silvery white metallic",
     "atomic_mass": 226,
@@ -2554,6 +2642,7 @@
     "cpk-hex": "007d00"
   },
   {
+    "common_charges": ["3+"],
     "name": "Actinium",
     "appearance": "undetermined",
     "atomic_mass": 227,
@@ -2582,6 +2671,7 @@
     "cpk-hex": "70abfa"
   },
   {
+    "common_charges": ["4+"],
     "name": "Thorium",
     "appearance": "silvery, often with black tarnish",
     "atomic_mass": 232.03774,
@@ -2610,6 +2700,7 @@
     "cpk-hex": "00baff"
   },
   {
+    "common_charges": ["5+","4+"],
     "name": "Protactinium",
     "appearance": "bright, silvery metallic luster",
     "atomic_mass": 231.035882,
@@ -2638,6 +2729,7 @@
     "cpk-hex": "00a1ff"
   },
   {
+    "common_charges": ["6+","4+"],
     "name": "Uranium",
     "appearance": "undetermined",
     "atomic_mass": 238.028913,
@@ -2666,6 +2758,7 @@
     "cpk-hex": "008fff"
   },
   {
+    "common_charges": ["5+"],
     "name": "Neptunium",
     "appearance": "silvery metallic",
     "atomic_mass": 237,
@@ -2694,6 +2787,7 @@
     "cpk-hex": "0080ff"
   },
   {
+    "common_charges": ["4+","6+"],
     "name": "Plutonium",
     "appearance": "silvery white, tarnishing to dark gray in air",
     "atomic_mass": 244,
@@ -2722,6 +2816,7 @@
     "cpk-hex": "006bff"
   },
   {
+    "common_charges": ["3+", "4+"],
     "name": "Americium",
     "appearance": "silvery white",
     "atomic_mass": 243,
@@ -2750,6 +2845,7 @@
     "cpk-hex": "545cf2"
   },
   {
+    "common_charges": ["3+"],
     "name": "Curium",
     "appearance": "silvery metallic, glows purple in the dark",
     "atomic_mass": 247,
@@ -2778,6 +2874,7 @@
     "cpk-hex": "785ce3"
   },
   {
+    "common_charges": ["3+","4+"],
     "name": "Berkelium",
     "appearance": "silvery",
     "atomic_mass": 247,
@@ -2806,6 +2903,7 @@
     "cpk-hex": "8a4fe3"
   },
   {
+    "common_charges": ["3+"],
     "name": "Californium",
     "appearance": "silvery",
     "atomic_mass": 251,
@@ -2834,6 +2932,7 @@
     "cpk-hex": "a136d4"
   },
   {
+    "common_charges": ["3+"],
     "name": "Einsteinium",
     "appearance": "silver-colored",
     "atomic_mass": 252,
@@ -2862,6 +2961,7 @@
     "cpk-hex": "b31fd4"
   },
   {
+    "common_charges": ["3+"],
     "name": "Fermium",
     "appearance": "undetermined",
     "atomic_mass": 257,
@@ -2890,6 +2990,7 @@
     "cpk-hex": "b31fba"
   },
   {
+    "common_charges": ["2+","3+"],
     "name": "Mendelevium",
     "appearance": "undetermined",
     "atomic_mass": 258,
@@ -2918,6 +3019,7 @@
     "cpk-hex": "b30da6"
   },
   {
+    "common_charges": ["2+","3+"],
     "name": "Nobelium",
     "appearance": "undetermined",
     "atomic_mass": 259,
@@ -2946,6 +3048,7 @@
     "cpk-hex": "bd0d87"
   },
   {
+    "common_charges": ["3+"],
     "name": "Lawrencium",
     "appearance": "undetermined",
     "atomic_mass": 266,
@@ -2974,6 +3077,7 @@
     "cpk-hex": "c70066"
   },
   {
+    "common_charges": ["4+"],
     "name": "Rutherfordium",
     "appearance": "undetermined",
     "atomic_mass": 267,
@@ -3002,6 +3106,7 @@
     "cpk-hex": "cc0059"
   },
   {
+    "common_charges": ["3+"],
     "name": "Dubnium",
     "appearance": "undetermined",
     "atomic_mass": 268,

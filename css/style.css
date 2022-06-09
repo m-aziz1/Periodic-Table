@@ -75,7 +75,22 @@ h1 {
   top: 90%;
   left: 50%;
   margin-top: 0px;
-  font-size: 0.6vw;
+  font-size: 0.7vw;
+}
+
+/* Groups */
+#groups {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.group-number {
+  text-align: center;
+  width: 5vw;
+  height: 1vw;
+  background-color: lightgray;
+  margin-bottom: 1vw;
+  font-size: 0.8vw;
 }
 
 /* Media Queries */
