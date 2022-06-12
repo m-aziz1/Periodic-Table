@@ -1511,7 +1511,7 @@
     "cpk-hex": "a67573"
   },
   {
-    "common_charges": ["4+","2+"],
+    "common_charges": ["4+", "2+"],
     "name": "Tin",
     "appearance": "silvery-white (beta, β) or gray (alpha, α)",
     "atomic_mass": 118.7107,
@@ -1733,7 +1733,7 @@
     "summary": "Lanthanum is a soft, ductile, silvery-white metallic chemical element with symbol La and atomic number 57. It tarnishes rapidly when exposed to air and is soft enough to be cut with a knife. It gave its name to the lanthanide series, a group of 15 similar elements between lanthanum and lutetium in the periodic table:it is also sometimes considered the first element of the 6th-period transition-metals.",
     "symbol": "La",
     "xpos": 3,
-    "ypos": 9,
+    "ypos": 6,
     "shells": [2, 8, 18, 18, 9, 2],
     "electron_configuration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 5d1",
     "electron_configuration_semantic": "[Xe] 5d16s2",
@@ -1859,7 +1859,7 @@
     "cpk-hex": "a3ffc7"
   },
   {
-    "common_charges": ["3+","2+"],
+    "common_charges": ["3+", "2+"],
     "name": "Samarium",
     "appearance": "silvery white",
     "atomic_mass": 150.362,
@@ -1888,7 +1888,7 @@
     "cpk-hex": "8fffc7"
   },
   {
-    "common_charges": ["3+","2+"],
+    "common_charges": ["3+", "2+"],
     "name": "Europium",
     "appearance": "undetermined",
     "atomic_mass": 151.9641,
@@ -2091,7 +2091,7 @@
     "cpk-hex": "00d452"
   },
   {
-    "common_charges": ["3+","2+"],
+    "common_charges": ["3+", "2+"],
     "name": "Ytterbium",
     "appearance": "undetermined",
     "atomic_mass": 173.0451,
@@ -2323,7 +2323,7 @@
     "cpk-hex": "175487"
   },
   {
-    "common_charges": ["4+","2+"],
+    "common_charges": ["4+", "2+"],
     "name": "Platinum",
     "appearance": "silvery white",
     "atomic_mass": 195.0849,
@@ -2352,7 +2352,7 @@
     "cpk-hex": "d0d0e0"
   },
   {
-    "common_charges": ["3+","1+"],
+    "common_charges": ["3+", "1+"],
     "name": "Gold",
     "appearance": "metallic yellow",
     "atomic_mass": 196.9665695,
@@ -2381,7 +2381,7 @@
     "cpk-hex": "ffd123"
   },
   {
-    "common_charges": ["2+","1+"],
+    "common_charges": ["2+", "1+"],
     "name": "Mercury",
     "appearance": "silvery",
     "atomic_mass": 200.5923,
@@ -2410,7 +2410,7 @@
     "cpk-hex": "b8b8d0"
   },
   {
-    "common_charges": ["1","3+"],
+    "common_charges": ["1", "3+"],
     "name": "Thallium",
     "appearance": "silvery white",
     "atomic_mass": 204.38,
@@ -2439,7 +2439,7 @@
     "cpk-hex": "a6544d"
   },
   {
-    "common_charges": ["2+","4+"],
+    "common_charges": ["2+", "4+"],
     "name": "Lead",
     "appearance": "metallic gray",
     "atomic_mass": 207.21,
@@ -2468,7 +2468,7 @@
     "cpk-hex": "575961"
   },
   {
-    "common_charges": ["3+","5+"],
+    "common_charges": ["3+", "5+"],
     "name": "Bismuth",
     "appearance": "lustrous silver",
     "atomic_mass": 208.980401,
@@ -2497,7 +2497,7 @@
     "cpk-hex": "9e4fb5"
   },
   {
-    "common_charges": ["2+","4+"],
+    "common_charges": ["2+", "4+"],
     "name": "Polonium",
     "appearance": "silvery",
     "atomic_mass": 209,
@@ -2661,7 +2661,7 @@
     "summary": "Actinium is a radioactive chemical element with symbol Ac (not to be confused with the abbreviation for an acetyl group) and atomic number 89, which was discovered in 1899. It was the first non-primordial radioactive element to be isolated. Polonium, radium and radon were observed before actinium, but they were not isolated until 1902.",
     "symbol": "Ac",
     "xpos": 3,
-    "ypos": 10,
+    "ypos": 7,
     "shells": [2, 8, 18, 32, 18, 9, 2],
     "electron_configuration": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6 5s2 4d10 5p6 6s2 4f14 5d10 6p6 7s2 6d1",
     "electron_configuration_semantic": "[Rn] 6d1 7s2",
@@ -2700,7 +2700,7 @@
     "cpk-hex": "00baff"
   },
   {
-    "common_charges": ["5+","4+"],
+    "common_charges": ["5+", "4+"],
     "name": "Protactinium",
     "appearance": "bright, silvery metallic luster",
     "atomic_mass": 231.035882,
@@ -2729,7 +2729,7 @@
     "cpk-hex": "00a1ff"
   },
   {
-    "common_charges": ["6+","4+"],
+    "common_charges": ["6+", "4+"],
     "name": "Uranium",
     "appearance": "undetermined",
     "atomic_mass": 238.028913,
@@ -2787,7 +2787,7 @@
     "cpk-hex": "0080ff"
   },
   {
-    "common_charges": ["4+","6+"],
+    "common_charges": ["4+", "6+"],
     "name": "Plutonium",
     "appearance": "silvery white, tarnishing to dark gray in air",
     "atomic_mass": 244,
@@ -2874,7 +2874,7 @@
     "cpk-hex": "785ce3"
   },
   {
-    "common_charges": ["3+","4+"],
+    "common_charges": ["3+", "4+"],
     "name": "Berkelium",
     "appearance": "silvery",
     "atomic_mass": 247,
@@ -2990,7 +2990,7 @@
     "cpk-hex": "b31fba"
   },
   {
-    "common_charges": ["2+","3+"],
+    "common_charges": ["2+", "3+"],
     "name": "Mendelevium",
     "appearance": "undetermined",
     "atomic_mass": 258,
@@ -3019,7 +3019,7 @@
     "cpk-hex": "b30da6"
   },
   {
-    "common_charges": ["2+","3+"],
+    "common_charges": ["2+", "3+"],
     "name": "Nobelium",
     "appearance": "undetermined",
     "atomic_mass": 259,
@@ -3106,7 +3106,7 @@
     "cpk-hex": "cc0059"
   },
   {
-    "common_charges": ["3+"],
+    "common_charges": "undetermined",
     "name": "Dubnium",
     "appearance": "undetermined",
     "atomic_mass": 268,
@@ -3135,6 +3135,7 @@
     "cpk-hex": "d1004f"
   },
   {
+    "common_charges": "undetermined",
     "name": "Seaborgium",
     "appearance": "undetermined",
     "atomic_mass": 269,
@@ -3163,6 +3164,7 @@
     "cpk-hex": "d90045"
   },
   {
+    "common_charges": "undetermined",
     "name": "Bohrium",
     "appearance": "undetermined",
     "atomic_mass": 270,
@@ -3191,6 +3193,7 @@
     "cpk-hex": "e00038"
   },
   {
+    "common_charges": "undetermined",
     "name": "Hassium",
     "appearance": "undetermined",
     "atomic_mass": 269,
@@ -3219,6 +3222,7 @@
     "cpk-hex": "e6002e"
   },
   {
+    "common_charges": "undetermined",
     "name": "Meitnerium",
     "appearance": "undetermined",
     "atomic_mass": 278,
@@ -3247,6 +3251,7 @@
     "cpk-hex": "eb0026"
   },
   {
+    "common_charges": "undetermined",
     "name": "Darmstadtium",
     "appearance": "undetermined",
     "atomic_mass": 281,
@@ -3275,6 +3280,7 @@
     "cpk-hex": "undetermined"
   },
   {
+    "common_charges": "undetermined",
     "name": "Roentgenium",
     "appearance": "undetermined",
     "atomic_mass": 282,
@@ -3303,6 +3309,7 @@
     "cpk-hex": "undetermined"
   },
   {
+    "common_charges": "undetermined",
     "name": "Copernicium",
     "appearance": "undetermined",
     "atomic_mass": 285,
@@ -3331,6 +3338,7 @@
     "cpk-hex": "undetermined"
   },
   {
+    "common_charges": "undetermined",
     "name": "Nihonium",
     "appearance": "undetermined",
     "atomic_mass": 286,
@@ -3359,6 +3367,7 @@
     "cpk-hex": "undetermined"
   },
   {
+    "common_charges": "undetermined",
     "name": "Flerovium",
     "appearance": "undetermined",
     "atomic_mass": 289,
@@ -3387,6 +3396,7 @@
     "cpk-hex": "undetermined"
   },
   {
+    "common_charges": "undetermined",
     "name": "Moscovium",
     "appearance": "undetermined",
     "atomic_mass": 289,
@@ -3415,6 +3425,7 @@
     "cpk-hex": "undetermined"
   },
   {
+    "common_charges": "undetermined",
     "name": "Livermorium",
     "appearance": "undetermined",
     "atomic_mass": 293,
@@ -3443,6 +3454,7 @@
     "cpk-hex": "undetermined"
   },
   {
+    "common_charges": "undetermined",
     "name": "Tennessine",
     "appearance": "undetermined",
     "atomic_mass": 294,
@@ -3471,6 +3483,7 @@
     "cpk-hex": "undetermined"
   },
   {
+    "common_charges": "undetermined",
     "name": "Oganesson",
     "appearance": "undetermined",
     "atomic_mass": 294,

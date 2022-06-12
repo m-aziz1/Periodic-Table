@@ -18,6 +18,7 @@
   width: 100%;
   overflow: hidden;
 }
+
 .info-table td {
   border-color: black;
   border-style: solid;
@@ -28,6 +29,7 @@
   padding: 10px 5px;
   word-break: normal;
 }
+
 .info-table th {
   border-color: black;
   border-style: solid;
@@ -38,4 +40,39 @@
   overflow: hidden;
   padding: 10px 5px;
   word-break: normal;
+}
+
+/* Legend */
+#legend {
+  width: 30vw;
+  height: fit-content;
+  margin-bottom: 1vw;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+#legend p {
+  font-size: 0.8vw;
+}
+
+.legend-item {
+  width: 1vw;
+  height: 1vw;
+  margin-right: 5px;
+}
+
+#legend-table {
+  border-spacing: 1;
+  width: 100%;
+}
+
+#legend-table td {
+  font-family: Arial, sans-serif;
+  font-size: 0.8vw;
+}
+
+/* polyatomic-ions */
+#polyatomic-ions {
+  width: 30%;
+  height: auto;
 }

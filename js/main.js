@@ -5,8 +5,7 @@ const tableGrid = document.getElementById("periodic-table");
 const extraInfoDiv = document.getElementById("extra-info-container");
 
 //GET JSON DATA
-datafromURL("../data.json");
-//"https://m-aziz1.github.io/Periodic-Table/data.json"
+datafromURL("https://m-aziz1.github.io/Periodic-Table/data.json");
 
 //CREATE GROUP HEADERS
 const groups = document.getElementById("groups");
@@ -83,7 +82,17 @@ function blockInfo(descriptor, anArray, keys) {
       innerHTML: `${anArray.number}`,
     });
 
-    //element eymbols
+    //common charges
+    if (anArray.common_charges != "undetermined") {
+      const charges = Object.assign(document.createElement("p"), {
+        classList: "common-charges",
+        innerHTML: `${anArray.common_charges}`,
+      });
+
+      elementBlock.append(charges);
+    }
+
+    //element symbols
     const elSymbol = Object.assign(document.createElement("p"), {
       classList: "el-symbol",
       innerHTML: `${anArray.symbol}`,
@@ -118,21 +127,24 @@ function buildTable(element, keys) {
   for (let i = 0; i < keys.length; i++) {
     let value = element[keys[i]];
     let units = "";
+
     //define units
-    switch (keys[i]) {
-      case "atomic_mass":
-        units = "g/mol";
-        value = value.toFixed(2);
-        break;
-      case "boil":
-      case "melt":
-        units = "K";
-        break;
-      case "density":
-        units = "g/cm<sup>3</sup>";
-        break;
-      case "molar_heat":
-        units = "J/mol * °C";
+    if (value !== "undetermined") {
+      switch (keys[i]) {
+        case "atomic_mass":
+          units = "(g/mol)";
+          value = value.toFixed(2);
+          break;
+        case "boil":
+        case "melt":
+          units = "(K)";
+          break;
+        case "density":
+          units = "(g/cm<sup>3</sup>)";
+          break;
+        case "molar_heat":
+          units = "(J/mol °C)";
+      }
     }
 
     const tr = document.createElement("tr");
@@ -149,7 +161,16 @@ function buildTable(element, keys) {
     table.appendChild(tBody);
   }
 
-  extraInfoDiv.appendChild(table);
+  //close button
+  const closeBtn = Object.assign(document.createElement("button"), {
+    classList: "close-btn",
+    innerHTML: "X",
+  });
+  closeBtn.addEventListener("click", () => {
+    deleteNodes(extraInfoDiv);
+  });
+
+  extraInfoDiv.append(closeBtn, table);
 }
 
 //OTHER FUNCTIONS
