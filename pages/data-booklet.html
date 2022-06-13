@@ -7,17 +7,23 @@
     <title>Data Booklet</title>
     <link rel="icon" type="image/x-icon" href="../favicon.ico" />
     <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/categories.css" />
-    <link rel="stylesheet" href="../css/extra-info.css" />
   </head>
 
   <body>
     <!-- Navigation -->
-    <a class="unselected" id="page-1-btn" href="../index.html">Periodic Table</a>
+    <a class="unselected" id="page-1-btn" href="../index.html"
+      >Periodic Table</a
+    >
     <a class="current" id="other-pages-btn">Data Booklet</a>
 
     <!-- Data Booklet -->
     <h1>Data Booklet</h1>
-    
+
+    <input type="search" id="page-search" placeholder="search for page" />
+
+    <div id="pages-container"></div>
+
+    <!-- Load Javascript -->
+    <script src="../js/data-booklet.js"></script>
   </body>
 </html>
