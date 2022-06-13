@@ -6,18 +6,12 @@ const toggleBtn = document.querySelector(".light-toggle");
 
 function enableDarkMode() {
   localStorage.setItem("dark-mode", "enabled");
-  document.body.style.backgroundColor = "black";
-  toggleBtn.style.backgroundColor = "lightyellow";
-  toggleBtn.style.color = "black";
-  headersColor("lightblue");
+  updatePage("black", "lightyellow", "black", "lightblue", "Light Mode");
 }
 
 function disableDarkMode() {
   localStorage.setItem("dark-mode", "disabled");
-  document.body.style.backgroundColor = "white";
-  toggleBtn.style.backgroundColor = "black";
-  toggleBtn.style.color = "lightyellow";
-  headersColor("midnightblue");
+  updatePage("white", "black", "lightyellow", "midnightblue", "Dark Mode");
 }
 
 if (darkMode === "enabled") {
@@ -33,11 +27,17 @@ toggleBtn.addEventListener("click", () => {
   }
 });
 
-function headersColor(color) {
-  const h1 = document.querySelector("h1");
-  h1.style.color = color;
-  const h2 = document.querySelectorAll("h2");
+//UPDATE PAGE COLORS
+const h1 = document.querySelector("h1");
+const h2 = document.querySelectorAll("h2");
+
+function updatePage(bodyClr, btnClr, txtClr, headClr, btnTxt) {
+  document.body.style.backgroundColor = bodyClr;
+  toggleBtn.style.backgroundColor = btnClr;
+  toggleBtn.style.color = txtClr;
+  h1.style.color = headClr;
   h2.forEach((element) => {
-    element.style.color = color;
+    element.style.color = headClr;
   });
+  toggleBtn.innerHTML = btnTxt;
 }
