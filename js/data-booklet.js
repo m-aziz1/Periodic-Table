@@ -1,8 +1,8 @@
 //DATA BOOKLET PAGES
 let pages = [
   "table of common polyatomic ions",
-  "chemistry notation",
-  "miscellaneous",
+  "chemistry notation symbol term",
+  "miscellaneous selected si prefixes",
   "standard molar enthalpies of formation",
   "standard molar enthalpies of formation continued",
   "solubility of some common ionic compounds in water flame colour of elements",
