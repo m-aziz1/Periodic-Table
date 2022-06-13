@@ -7,12 +7,21 @@
 #page-1-btn,
 #other-pages-btn {
   text-align: center;
-  background-color: burlywood;
-  color: midnightblue;
   border: 0;
   padding: 4px;
   font-size: 0.9vw;
   cursor: pointer;
+  text-decoration: none;
+}
+
+.current {
+  background-color: midnightblue;
+  color: burlywood;
+}
+
+.unselected {
+  background-color: burlywood;
+  color: midnightblue;
 }
 
 .close-btn {
@@ -20,8 +29,7 @@
   color: red;
   border: 0;
   cursor: pointer;
-  font-size: 0.9vw;
-
+  font-size: 1vw;
   margin-bottom: 5px;
 }
 

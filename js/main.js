@@ -83,7 +83,7 @@ function blockInfo(descriptor, anArray, keys) {
     });
 
     //common charges
-    if (anArray.common_charges != "undetermined") {
+    if (anArray.common_charges !== "undetermined") {
       const charges = Object.assign(document.createElement("p"), {
         classList: "common-charges",
         innerHTML: `${anArray.common_charges}`,
