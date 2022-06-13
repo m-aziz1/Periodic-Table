@@ -5,13 +5,20 @@
 
 /* Buttons */
 #page-1-btn,
-#other-pages-btn {
+#other-pages-btn,
+.light-toggle {
   text-align: center;
   border: 0;
   padding: 4px;
   font-size: 0.9vw;
   cursor: pointer;
   text-decoration: none;
+}
+
+.light-toggle {
+  float: right;
+  background-color: black;
+  color: lightyellow;
 }
 
 .current {
@@ -41,13 +48,14 @@ body {
 h1 {
   margin: 1.5vw;
   text-align: center;
-  color: darkgreen;
+  color: midnightblue;
   font-size: 2.5vw;
 }
 
 h2 {
   text-align: center;
   font-size: 1.5vw;
+  color: midnightblue;
 }
 
 /* Data Book Pages */
@@ -59,6 +67,7 @@ h2 {
   height: 2.5vw;
   font-size: 1.5vw;
   border: 1px solid black;
+  border-radius: 0;
   text-align: center;
 }
 

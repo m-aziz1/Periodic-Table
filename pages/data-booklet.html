@@ -12,18 +12,23 @@
   <body>
     <!-- Navigation -->
     <a class="unselected" id="page-1-btn" href="../index.html"
-      >Periodic Table</a
-    >
+      >Periodic Table</a>
     <a class="current" id="other-pages-btn">Data Booklet</a>
+    <button class="light-toggle">Dark Mode</button>
 
     <!-- Data Booklet -->
     <h1>Data Booklet</h1>
 
-    <input type="search" id="page-search" placeholder="search by title or page number" />
+    <input
+      type="search"
+      id="page-search"
+      placeholder="search by title or page number"
+    />
 
     <div id="pages-container"></div>
 
     <!-- Load Javascript -->
-    <script src="../js/data-booklet.js"></script>
+    <script src="../js/data-booklet.js" defer></script>
+    <script src="../js/light-toggle.js" defer></script>
   </body>
 </html>

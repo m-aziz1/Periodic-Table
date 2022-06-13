@@ -1,5 +1,6 @@
 //DATA BOOKLET PAGES
 let pages = [
+  "table of common polyatomic ions",
   "chemistry notation",
   "miscellaneous",
   "standard molar enthalpies of formation",
@@ -17,11 +18,12 @@ let objects = [];
 
 //APPEND IMAGES
 const pagesContainer = document.getElementById("pages-container");
+
 for (let i = 0; i < pages.length; i++) {
-  let number = i + 2;
+  let number = i + 1;
 
   const h2 = Object.assign(document.createElement("h2"), {
-    innerHTML: `page ${number}`,
+    innerHTML: `${number}`,
   });
 
   const img = Object.assign(document.createElement("img"), {
